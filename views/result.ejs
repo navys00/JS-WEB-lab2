@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css"  href="main.css" />
+</head>
+<body>
+    <div class="result-box" id="result">
+        <form id="form" method="post">
+            <div class="result-header">
+                <h2>Вы ответили правильно на <%=score%>/<%=length%> вопросов</h2>
+            </div>
+            
+        </form>
+        <div style="text-align: center;">
+        <table width="200" style="display: inline-block;">
+            <tr><th>Вопросы</th><th>проверка ответов</th></tr> 
+            <%for(let k = 0; k<ansArray.length;k++){%> 
+                <tr><td><%=k+1%>.</td><td><%=ansArray[k]%></td></tr>
+            <%}%> 
+        </table>
+        </div>
+        <form action="http://localhost:8080/">
+        <button type="submit">Пройти тест заново</button>                 
+        </form>
+        
+    </div>
+</body>
+</html>

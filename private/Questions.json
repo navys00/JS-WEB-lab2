@@ -1,0 +1,35 @@
+ [
+    {
+      "question": "1+1",
+      "answers": [
+        {"answer": "0",
+          "correct": false},
+        {"answer": "2",
+          "correct": true},
+        {"answer": "5",
+          "correct": false}
+        ]
+    },
+    {
+      "question": "2*2",
+      "answers": [
+        {"answer": "4",
+          "correct": true},
+        {"answer": "36",
+          "correct": false},
+        {"answer": "40",
+          "correct": false}
+      ]
+    },
+    {
+      "question": "кто написал \"Войну и Мир\"",
+      "answers": [
+        {"answer": "Александр Пушкин",
+          "correct": false},
+        {"answer": "Адриано Челентано",
+          "correct": false},
+        {"answer": "Лев Толстой",
+          "correct": true}
+      ]
+    }
+  ]

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>		
+       
+    <title>Quiz Project</title>
+    <link rel="stylesheet" type="text/css"  href="main.css" />
+</head>
+<body>
+<div class="quiz-box" id="quiz">
+    <form id="form" method="post" >
+        <div class="quiz-header">
+            <h2 id="question"><%=Question.question%></h2>
+            <ul>
+                <%for(let i = 0; i<Question.answers.length;i++){%>
+                <li>
+                    <input type="radio" name = 'variant'  value="<%=i+1%>" id="<%=i+1%>" class="answer">
+                    <label ><%=Question.answers[i].answer%></label>
+                </li>
+                <%}%>
+            </ul>
+        </div>
+        <button id="sub" type="submit" name = 'nextQuestion' value= <%=questNum %> >Далее</button>
+    </form>
+</div>    
+</body>  
+</html>
